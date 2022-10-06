@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Bar chart</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.7.0/d3.min.js"></script>
+</head>
+  <body>
+    <center>
+      <script src="bar.js"></script>
+      <div id="wrapper"></div>
+          <div>
+              <button id="low" onclick="drawBar(this.id, 'temperatureLow', 'blue')" class="btn active">Temperature Low</button>
+              <button id="min" onclick="drawBar(this.id, 'temperatureMin', 'blue')" class="btn">Temperature Min </button>
+              <button id="high" onclick="drawBar(this.id, 'temperatureHigh', 'red')" class="btn">Temperature High</button>
+              <button id="max" onclick="drawBar(this.id, 'temperatureMax', 'red')" class="btn"> Temperature Max</button>
+          </div>
+        </div>
+    </center>
+</body>
+</html>
