@@ -82,7 +82,8 @@ async function buildPlot() {
         .attr("cy", (d) => d.y)
         .attr('r', radius)
         .attr("fill", (d) => d.color);
-    
+    //drawing circles
+
     squares.selectAll("rect")
         .data(data2)
         .enter()
@@ -92,7 +93,7 @@ async function buildPlot() {
         .attr('width', height)
         .attr('height', width)
         .attr("fill", (d) => d.color);
-
+    //drawing squares
 }
 
 async function clean() {
