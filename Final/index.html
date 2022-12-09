@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Bar chart</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.7.0/d3.min.js"></script>
+
+  </head>
+  <body >
+      <center>
+      <script src="bar.js"></script>
+      <div id="wrapper" style="margin: 20px"></div></div>
+      <div >
+          <button id="region_brate" onclick="drawBar(this.id, 'Bplace', 'blue')" class="btn active">Birth rate by region</button>
+          <button id="region_drate" onclick="drawBar(this.id, 'reg', 'red')" class="btn">Death rate by region</button>
+          <button id="period_brate" onclick="drawBar(this.id, 'Bday', 'blue')" class="btn">Birth rate by period</button>
+          <button id="period_drate" onclick="drawBar(this.id, 'Dday', 'red')" class="btn">Death rate by period</button>
+      </div>
+      </center>
+</body>
+</html>
